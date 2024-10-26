@@ -1,0 +1,122 @@
+/* Logo Styling */
+.logo {
+    display: block;
+    margin: auto;
+    width: 60px;
+    height: 60px;
+    font-size: 50px;
+    color: lightskyblue;
+    cursor: pointer;
+    transition: transform 0.3s ease, color 0.5s ease;
+}
+.logo:hover {
+    color: blue;
+    transform: scale(1.2); /* Logo grows slightly on hover */
+    animation: logo-pulse 1.5s infinite; /* Pulsing animation */
+}
+@keyframes logo-pulse {
+    0%, 100% { transform: scale(1); }
+    50% { transform: scale(1.2); }
+}
+
+/* Container Styling */
+.container {
+    max-width: 95%;
+    width: 99%;
+    background-color: #fef3dc; /* Softer bisque shade */
+    margin: auto;
+    height: 75vh;
+    padding: 25px;
+    border: 2px solid #ccc; /* Lighter border */
+    border-radius: 8px;
+    overflow-y: scroll;
+    margin-top: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    box-sizing: border-box;
+    transition: box-shadow 0.3s ease, background-color 0.3s ease;
+}
+.container:hover {
+    background-color: #fff3e0;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2); /* Enhanced shadow on hover */
+}
+
+/* Message Styling */
+.message {
+    width: auto;
+    max-width: 45%;
+    padding: 12px;
+    margin: 10px 15px;
+    border-radius: 5px;
+    font-size: 14px;
+    opacity: 0;
+    animation: fadeIn 0.8s forwards; /* Fade-in effect for messages */
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+.message:hover {
+    transform: scale(1.05); /* Slightly grows on hover */
+}
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+.left {
+    float: left;
+    background-color: #e0f7fa;
+    color: #00796b;
+    clear: both;
+}
+.right {
+    float: right;
+    background-color: #d1c4e9;
+    color: #512da8;
+    clear: both;
+}
+
+/* Send Container */
+#send-container {
+    text-align: center;
+    max-width: 985px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    padding-top: 10px;
+}
+
+/* Button Styling */
+.btn {
+    cursor: pointer;
+    border: 2px solid #00796b;
+    background-color: #4db6ac;
+    border-radius: 10px;
+    padding: 10px 15px;
+    color: white;
+    font-size: 16px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+.btn:hover {
+    background-color: #00796b; /* Darker green on hover */
+    transform: scale(1.1); /* Slightly grows on hover */
+    animation: btn-pulse 0.6s ease-out; /* Pulse effect */
+}
+@keyframes btn-pulse {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.1); }
+    100% { transform: scale(1); }
+}
+h1{
+    margin-top: 12px;
+    font-size: 30px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+    color: #00796b;
+}
+
+/* General Reset */
+html, body {
+    overflow: hidden;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f1f1f1;
+}
